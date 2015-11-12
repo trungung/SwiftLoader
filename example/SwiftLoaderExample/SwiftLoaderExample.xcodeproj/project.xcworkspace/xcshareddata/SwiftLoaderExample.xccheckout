@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>83BFE832-CCAA-4DDC-8AC4-A9F0BB014DDB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwiftLoaderExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9E623E1AABE36FD01B1DB720D2F5D2C5C5F26864</key>
+		<string>https://github.com/trungung/SwiftLoader.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>example/SwiftLoaderExample/SwiftLoaderExample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9E623E1AABE36FD01B1DB720D2F5D2C5C5F26864</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/trungung/SwiftLoader.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9E623E1AABE36FD01B1DB720D2F5D2C5C5F26864</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9E623E1AABE36FD01B1DB720D2F5D2C5C5F26864</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Github-pods</string>
+		</dict>
+	</array>
+</dict>
+</plist>
