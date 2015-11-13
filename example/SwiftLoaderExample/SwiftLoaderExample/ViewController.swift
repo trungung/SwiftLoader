@@ -50,8 +50,16 @@ class ViewController: UIViewController {
         delay(seconds: 3.0) { () -> () in
             SwiftLoader.show(title: "Loading...", animated: true)
         }
+      delay(seconds: 4.0) { () -> () in
+        SwiftLoader.show(title: "Loading 2...", animated: true)
+      }
+      
+      delay(seconds: 5.0) { () -> () in
+        SwiftLoader.show(title: "Loading 3...", animated: true)
+      }
         delay(seconds: 6.0) { () -> () in
-            SwiftLoader.hide()
+//            SwiftLoader.removeFromView()
+          SwiftLoader.hide()
         }
         
     }

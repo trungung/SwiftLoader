@@ -45,30 +45,46 @@ public class SwiftLoader: UIView {
     public class func show(#animated: Bool) {
         self.show(title: nil, animated: animated)
     }
-    
+  
+    public class func removeFromView() {
+      let loader = SwiftLoader.sharedInstance
+      loader.coverView?.removeFromSuperview()
+      loader.removeFromSuperview()
+      if (loader.loadingView != nil) {
+        loader.loadingView?.removeFromSuperview()
+      }
+      loader.stop()
+    }
+  
     public class func show(#title: String?, animated : Bool) {
         var currentWindow : UIWindow = UIApplication.sharedApplication().keyWindow!
         
         let loader = SwiftLoader.sharedInstance
+        if let cover = loader.coverView {
+          cover.removeFromSuperview()
+        }
+      
         loader.canUpdated = true
         loader.animated = animated
         loader.title = title
         loader.update()
-        
+      
         var height : CGFloat = UIScreen.mainScreen().bounds.size.height
         var width : CGFloat = UIScreen.mainScreen().bounds.size.width
         var center : CGPoint = CGPointMake(width / 2.0, height / 2.0)
         loader.center = center
         
         loader.coverView = UIView(frame: currentWindow.bounds)
-        loader.coverView?.backgroundColor = UIColor.clearColor()
-        
+        loader.coverView?.backgroundColor = UIColor.blueColor()
+        loader.coverView?.alpha = 0.5
+      
         if (loader.superview == nil) {
             currentWindow.addSubview(loader.coverView!)
             currentWindow.addSubview(loader)
             loader.start()
         } else {
-            loader.coverView?.removeFromSuperview()
+          currentWindow.addSubview(loader.coverView!)
+          currentWindow.bringSubviewToFront(loader)
         }
     }
     
